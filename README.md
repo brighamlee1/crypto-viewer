@@ -1,5 +1,10 @@
 # Crypto Viewer
 
+### Description
+- This application will display the top 100 cryptocurrencies in real time and will update as the info updates.
+- You can click on a crypto coin and view more thorough information about it.
+- You will be able to view stats that can help you learn more about crypto itself or a specific coin you would like to learn about.
+
 ### MVP User Stories
 - As a user, I want to see all of the top 100 cryptocurrencies in real time and see real stats.
 - As a user, I want to click on a crypto coin and view more information about it.
@@ -13,3 +18,5 @@
 ### Wireframes
 ![Screen Shot 2022-05-13 at 2 37 20 PM](https://user-images.githubusercontent.com/91819733/168378465-ea25f418-a6f7-4c41-af7c-9108d1bd7f89.png)
 ![Screen Shot 2022-05-13 at 2 40 29 PM](https://user-images.githubusercontent.com/91819733/168378500-c56b33c7-1a77-4fd1-9e2b-ebfc4aa3edbe.png)
+
+### Component Hierarchy
