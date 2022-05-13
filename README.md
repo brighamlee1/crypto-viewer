@@ -20,3 +20,4 @@
 ![Screen Shot 2022-05-13 at 2 40 29 PM](https://user-images.githubusercontent.com/91819733/168378500-c56b33c7-1a77-4fd1-9e2b-ebfc4aa3edbe.png)
 
 ### Component Hierarchy
+![Screen Shot 2022-05-13 at 2 57 33 PM](https://user-images.githubusercontent.com/91819733/168380883-340a6636-df62-4bd1-980d-4ba3d7352aaf.png)
