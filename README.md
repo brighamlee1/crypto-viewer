@@ -11,3 +11,5 @@
 - As a user, I want to be able to see the latest news on crypto currency.
 
 ### Wireframes
+![Screen Shot 2022-05-13 at 2 37 20 PM](https://user-images.githubusercontent.com/91819733/168378465-ea25f418-a6f7-4c41-af7c-9108d1bd7f89.png)
+![Screen Shot 2022-05-13 at 2 40 29 PM](https://user-images.githubusercontent.com/91819733/168378500-c56b33c7-1a77-4fd1-9e2b-ebfc4aa3edbe.png)
