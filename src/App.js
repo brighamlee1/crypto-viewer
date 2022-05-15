@@ -1,26 +1,60 @@
-import './App.css';
+import './styles/CryptoList.css';
+import './styles/Header.css'
 import { useEffect, useState } from 'react';
-// import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Coin from './components/Coin';
+import CryptoList from './components/CryptoList';
+import Header from './components/Header';
+import Title from './components/Title';
+import Search from './components/Search';
 
 function App() {
   const [crypto, setCrypto] = useState([]);
+  const [search, setSearch] = useState('');
 
-  const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false";
+  const filteredCoins = crypto.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()));
+
+  const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d%2C14d%2C30d%2C200d/";
 
   const getCrypto = async () => {
     const response = await fetch(url);
     const data = await response.json();
     console.log(data)
     setCrypto(data);
-};
+  };
 
-useEffect(() => {
-  getCrypto();
-}, [])
+  const handleChange = e => {
+    e.preventDefault();
+    setSearch(e.target.value.toLowerCase())
+  }
+
+  useEffect(() => {
+    getCrypto();
+  }, [])
 
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Header />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Title />
+            <Search
+              type="text"
+              placeholder="Search by coin name"
+              onChange={handleChange}
+            />
+            <CryptoList
+              crypto={filteredCoins} />
+          </>
+        }
+        />
+        <Route
+          path="/:id"
+          element={<Coin
+            crypto={crypto} />}
+        />
+      </Routes>
     </div>
   );
 }

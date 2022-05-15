@@ -1,0 +1,157 @@
+.App {
+  background-color: rgb(228, 228, 228);
+  font-family: 'Heebo', sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.crypto-list {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(228, 228, 228);
+}
+
+.crypto-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  height: 90px;
+  border-bottom: 1px solid #272761;
+  width: 80vw;
+  color: rgb(45, 45, 45);
+}
+
+.crypto-coin {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  max-width: 400px;
+}
+
+.crypto-coin h1 {
+  font-size: 18px;
+  min-width: 120px;
+}
+
+.crypto-coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.crypto-data {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.price {
+  width: 90px;
+  text-align: start;
+}
+
+.percentage-24h {
+  width: 100px;
+  text-align: start;
+}
+
+.price-7d {
+  width: 100px;
+  text-align: start;
+}
+
+.market-cap {
+  width: 170px;
+  text-align: end;
+}
+
+.green {
+  color: rgb(0, 201, 10);
+}
+
+.red {
+  color: red;
+}
+
+.labels {
+  display: flex;
+  justify-content: center;
+}
+
+.labels-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  height: 90px;
+  border-bottom: 1px solid #272761;
+  border-top: 1px solid #272761;
+  width: 80vw;
+  font-weight: bold;
+  color: rgb(45, 45, 45);
+}
+
+.labels-coin {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+
+.labels-coin p {
+  width: 184px;
+  text-align: start;
+}
+
+.labels-data {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.price-label {
+  width: 90px;
+  text-align: start;
+}
+
+.label-24h {
+  width: 100px;
+  text-align: start;
+}
+
+.label-7d {
+  width: 100px;
+  text-align: start;
+}
+
+.market-cap-label {
+  width: 170px;
+  text-align: end;
+}
+
+.title-box {
+  display: grid;
+  justify-items: center;
+}
+
+.title-image-box {
+  display: flex; 
+  justify-items: center;
+}
+
+.home-logo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  image-rendering: optimizeQuality;
+  margin: 80px 0 20px 0;
+}
