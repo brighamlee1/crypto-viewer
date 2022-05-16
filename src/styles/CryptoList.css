@@ -35,7 +35,7 @@ p {
   border-bottom: 1px solid #272761;
   width: 80vw;
   color: rgb(45, 45, 45);
-  transition: .4s;
+  transition: all .4s ease-out;
 }
 
 .crypto-row:hover {

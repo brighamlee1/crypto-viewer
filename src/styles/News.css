@@ -23,6 +23,7 @@ section {
     text-align: center;
     height: 330px;
     transition: all .3s ease-in-out;
+    font-family: 'Comfortaa', cursive;
 }
 
 .article:hover {
@@ -47,7 +48,16 @@ section {
 
 .article h2 {
     font-size: 18px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 420px){
+    .articles-container {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 20px 20px 40px 20px;
+    }
 }

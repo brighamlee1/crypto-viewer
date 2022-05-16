@@ -21,16 +21,15 @@ nav a {
     color: #272761;
     padding: 2px 5px 2px 5px;
     text-decoration: none;
-    transition: .4s;
+    transition: all .25s ease-in-out;
 }
 
 nav a:hover {
-    transform: translateY(-3px);
+    transform: scale(1.2);
     color: red;
 }
 
 nav a:active {
-    transform: translateY(-3px);
     color: red;
 }
 
