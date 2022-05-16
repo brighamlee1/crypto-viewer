@@ -2,6 +2,7 @@ import './styles/CryptoList.css';
 import './styles/HeaderFooter.css';
 import './styles/Search.css';
 import './styles/Coin.css';
+import './styles/News.css';
 import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Coin from './components/Coin';
