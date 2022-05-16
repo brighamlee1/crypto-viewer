@@ -10,6 +10,7 @@ import Header from './components/Header';
 import Title from './components/Title';
 import Search from './components/Search';
 import Footer from './components/Footer';
+import News from './components/News';
 
 function App() {
   const [crypto, setCrypto] = useState([]);
@@ -56,6 +57,10 @@ function App() {
         <Route
           path="/:id"
           element={<Coin />}
+        />
+        <Route
+          path="/news"
+          element={<News />}
         />
       </Routes>
     </div>
