@@ -5,7 +5,7 @@ function Header() {
         <section className='nav-box'>
             <nav>
                 <Link to="/">
-                    <h1>Crypto Coins</h1>
+                    <h1>Crypto Viewer</h1>
                 </Link>
                 <Link to="/news">
                     <h1>News</h1>

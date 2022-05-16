@@ -1,0 +1,61 @@
+.nav-box {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(8, 18, 46);
+    height: 45px;
+    width: 100vw;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(228, 228, 228);
+}
+
+nav a {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 15px;
+    color: #272761;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+    color: red;
+}
+
+nav a:active {
+    transform: translateY(-3px);
+    color: red;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(228, 228, 228);
+    width: 80vw;
+}
+
+.footer-container h4 {
+    color: #272761;
+    border-bottom: 2px solid #272761;
+}
+
+.footer-logo {
+    height: 26px;
+    width: 26px;
+    margin-right: 5px;
+}

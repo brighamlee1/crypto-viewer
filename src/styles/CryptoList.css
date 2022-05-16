@@ -18,6 +18,14 @@ p {
   background-color: rgb(228, 228, 228);
 }
 
+.crypto-list a {
+  text-decoration: none;
+}
+
+.crypto-list a:active {
+  text-decoration: none;
+}
+
 .crypto-row {
   display: flex;
   flex-direction: row;
@@ -27,6 +35,15 @@ p {
   border-bottom: 1px solid #272761;
   width: 80vw;
   color: rgb(45, 45, 45);
+  transition: .4s;
+}
+
+.crypto-row:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+.crypto-row:active {
+  background-color: rgb(209, 209, 209);
 }
 
 .crypto-coin {
@@ -52,6 +69,12 @@ p {
   justify-content: space-between;
   text-align: center;
   width: 100%;
+}
+
+.symbol {
+  width: 80px;
+  text-align: start;
+  font-weight: 700;
 }
 
 .price {
@@ -98,6 +121,7 @@ p {
   width: 80vw;
   font-weight: bold;
   color: rgb(45, 45, 45);
+  transition: .4s;
 }
 
 .labels-coin {
@@ -116,6 +140,11 @@ p {
   justify-content: space-between;
   text-align: center;
   width: 100%;
+}
+
+.symbol-label {
+  width: 80px;
+  text-align: start;
 }
 
 .price-label {
