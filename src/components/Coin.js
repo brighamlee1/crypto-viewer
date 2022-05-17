@@ -38,66 +38,66 @@ function Coin(props) {
                 </div>
                 <div>
                     <div className="coin-numbers">
-                        <div>
+                        <div className="coin-boxes">
                             <h3>Price</h3>
                             <p>${coin.market_data.current_price.usd.toLocaleString()}</p>
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>Market Cap</h3>
                             <p>${coin.market_data.market_cap.usd.toLocaleString()}</p>
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>Rank</h3>
                             <p>#{coin.market_data.market_cap_rank}</p>
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>Volume</h3>
                             <p>${coin.market_data.total_volume.usd.toLocaleString()}</p>
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>All Time High</h3>
                             <p>${coin.market_data.ath.usd.toLocaleString()}</p>
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>All Time Low</h3>
                             <p>{coin.market_data.atl.usd}</p>
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>24h Change</h3>
                             {coin.market_data.price_change_percentage_24h < 0 ?
                                 <p className="red">{coin.market_data.price_change_percentage_24h.toFixed(2)}%</p>
                                 : <p className="green">{coin.market_data.price_change_percentage_24h.toFixed(2)}%</p>
                             }
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>7d Change</h3>
                             {coin.market_data.price_change_percentage_7d < 0 ?
                                 <p className="red">{coin.market_data.price_change_percentage_7d.toFixed(2)}%</p>
                                 : <p className="green">{coin.market_data.price_change_percentage_7d.toFixed(2)}%</p>
                             }
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>14d Change</h3>
                             {coin.market_data.price_change_percentage_14d < 0 ?
                                 <p className="red">{coin.market_data.price_change_percentage_14d.toFixed(2)}%</p>
                                 : <p className="green">{coin.market_data.price_change_percentage_14d.toFixed(2)}%</p>
                             }
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>30d Change</h3>
                             {coin.market_data.price_change_percentage_30d < 0 ?
                                 <p className="red">{coin.market_data.price_change_percentage_30d.toFixed(2)}%</p>
                                 : <p className="green">{coin.market_data.price_change_percentage_30d.toFixed(2)}%</p>
                             }
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>60d Change</h3>
                             {coin.market_data.price_change_percentage_60d < 0 ?
                                 <p className="red">{coin.market_data.price_change_percentage_60d.toFixed(2)}%</p>
                                 : <p className="green">{coin.market_data.price_change_percentage_60d.toFixed(2)}%</p>
                             }
                         </div>
-                        <div>
+                        <div className="coin-boxes">
                             <h3>1y Change</h3>
                             {coin.market_data.price_change_percentage_1y < 0 ?
                                 <p className="red">{coin.market_data.price_change_percentage_1y.toFixed(2)}%</p>
