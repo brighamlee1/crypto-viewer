@@ -33,6 +33,10 @@ nav a:active {
     color: red;
 }
 
+nav h1 {
+    font-weight: 700;
+}
+
 .footer-box {
     display: flex;
     justify-content: center;
@@ -46,11 +50,15 @@ nav a:active {
     height: 80px;
     background-color: rgb(228, 228, 228);
     width: 80vw;
+    margin-top: 10px;
 }
 
 .footer-container h4 {
     color: #272761;
     border-bottom: 2px solid #272761;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    padding-bottom: 4px;
 }
 
 .footer-logo {

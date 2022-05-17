@@ -13,25 +13,32 @@ h2 {
     justify-content: center;
 }
 
-.coin-numbers {
-    display: flex;
-    justify-content: center;
-}
-
 .coin-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70vw;
     text-align: center;
+    height: 100%;
 }
 
-.coin-boxes {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    /* width: 80%; */
+.titlearea-box {
+    margin-bottom: 10px;
+    width: 80vw;
+}
+
+.titlearea-show-page {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlearea-show-page h2 {
+    font-size: 30px;
+}
+
+.titlearea-show-page h3 {
+    font-size: 20px;
 }
 
 .titlearea-show-page img {
@@ -40,12 +47,27 @@ h2 {
 }
 
 .coin-numbers {
-    box-shadow: 10px 10px 30px 10px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     background-color: rgb(218, 218, 218);
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 140px 140px 140px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 50px;
     align-items: center;
+    margin-bottom: 35px;
+    font-size: 19px;
+    height: auto;
+    width: 80vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.coin-numbers h3 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-weight: 500;
+}
+
+.coin-numbers p {
+    font-size: 16px;
+    color: rgb(54, 54, 54);
 }

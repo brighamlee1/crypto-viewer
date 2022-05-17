@@ -28,14 +28,20 @@ function App() {
     setCrypto(data);
   };
 
-  const handleChange = e => {
-    e.preventDefault();
-    setSearch(e.target.value.toLowerCase())
+  // const clearState = () => {
+  //   setSearch({ ...search });
+  // };
+
+  const handleChange = async (e) => {
+    await e.preventDefault();
+    setSearch(e.target.value.toLowerCase());
+    console.log(e.target.value.toLowerCase())
   }
 
   useEffect(() => {
     getCrypto();
   }, [])
+  
 
   return (
     <div className="App">
@@ -57,7 +63,12 @@ function App() {
         />
         <Route
           path="/:id"
-          element={<Coin />}
+          element={
+            <>
+              <Coin />
+              <Footer />
+            </>
+          }
         />
         <Route
           path="/news"
