@@ -59,12 +59,14 @@ h2 {
 .coin-numbers h3 {
     font-family: 'Saira Semi Condensed', sans-serif;
     font-weight: 500;
+    color: #272761;
 }
 
 .coin-numbers p {
     font-size: 16px;
     color: rgb(54, 54, 54);
 }
+
 @media screen and (max-width: 975px) {
     .coin-numbers {
         width: 90vw;

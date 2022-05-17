@@ -218,6 +218,20 @@ p {
   margin: 0 0 20px 0;
 }
 
+.rotate:hover {
+  animation: rotation 5s infinite;
+  animation-delay: 5s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 @media screen and (max-width: 975px) {
   .crypto-data {
     display: flex;

@@ -5,13 +5,13 @@ import './styles/Coin.css';
 import './styles/News.css';
 import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Coin from './components/Coin';
-import CryptoList from './components/CryptoList';
+import Coin from './pages/Coin';
+import CryptoList from './pages/CryptoList';
 import Header from './components/Header';
 import Title from './components/Title';
 import Search from './components/Search';
 import Footer from './components/Footer';
-import News from './components/News';
+import News from './pages/News';
 
 function App() {
   const [crypto, setCrypto] = useState([]);
@@ -39,7 +39,9 @@ function App() {
     setSearch(e.target.value.toLowerCase());
     console.log(e.target.value.toLowerCase())
   }
-
+  const onClick = () => {
+    search = '';
+  }
   useEffect(() => {
     getCrypto();
   }, [])
@@ -57,7 +59,9 @@ function App() {
               onChange={handleChange}
             />
             <CryptoList
-              crypto={filteredCoins} />
+              crypto={filteredCoins}
+              onClick={onClick}
+            />
             <Footer />
           </>
         }

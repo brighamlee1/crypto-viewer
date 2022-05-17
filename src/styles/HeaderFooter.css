@@ -7,17 +7,17 @@ nav {
     display: flex;
     justify-content: space-around;
     border-bottom: 3px solid #272761;
-    height: 45px;
+    height: 55px;
     width: 100vw;
     align-items: center;
     position: fixed;
-    background-color: rgb(228, 228, 228);
+    background-color: rgba(228, 228, 228, 0.897);
 }
 
 nav a {
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     color: #272761;
     padding: 2px 5px 2px 5px;
     text-decoration: none;

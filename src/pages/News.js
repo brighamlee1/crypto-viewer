@@ -2,11 +2,18 @@ import { useEffect, useState } from 'react';
 
 function News() {
     const [news, setNews] = useState(null)
-    const apiKey = `3b876d6ebdae4061ac48b6e1d00c663f`;
-    const url = `https://newsapi.org/v2/everything?q=crypto&sortBy=popularity&apiKey=${apiKey}`;
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-BingApis-SDK': 'true',
+            'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com',
+            'X-RapidAPI-Key': '335948f7b6msh667c6017fe2a1bap19998ejsn4ec79ba28cab'
+        }
+    };
+    const url = 'https://bing-news-search1.p.rapidapi.com/news/search?q=crypto&count=25&freshness=Day&textFormat=Raw&safeSearch=Off';
 
     const getNews = async () => {
-        const response = await fetch(url);
+        const response = await fetch(url, options);
         const data = await response.json();
         console.log(data);
         setNews(data);
@@ -21,7 +28,7 @@ function News() {
             <h1>Loading ... </h1>
         )
     }
-    const newsArticles = news.articles;
+    const newsArticles = news.value;
     return (
         <section>
             <h1 className="news-title">Latest Crypto Currency News</h1>
@@ -29,11 +36,11 @@ function News() {
                 {
                     newsArticles.map((news, idx) => {
                         return (
-                            <a className="article-link" href={news.url} target="_blank">
-                                <div className="news-articles" key={news.url}>
+                            <a className="article-link" href={news.url} key={idx} target="_blank">
+                                <div className="news-articles">
                                     <div className="article">
-                                        <img src={news.urlToImage} />
-                                        <h2>{news.title}</h2>
+                                        {!news.image.thumbnail.contentUrl ? <p></p> : <img src={news.image.thumbnail.contentUrl} />}
+                                        <h2>{news.name}</h2>
                                     </div>
                                 </div>
                             </a>
