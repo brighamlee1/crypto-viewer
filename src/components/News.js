@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 function News() {
     const [news, setNews] = useState(null)
     const apiKey = `3b876d6ebdae4061ac48b6e1d00c663f`;
-    const url = `https://newsapi.org/v2/everything?q=crypto&apiKey=3b876d6ebdae4061ac48b6e1d00c663f`;
+    const url = `https://newsapi.org/v2/everything?q=crypto&sortBy=popularity&apiKey=${apiKey}`;
 
     const getNews = async () => {
         const response = await fetch(url);

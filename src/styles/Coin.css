@@ -21,16 +21,8 @@ h2 {
     height: 100%;
 }
 
-.titlearea-box {
-    margin-bottom: 10px;
-    width: 80vw;
-}
-
 .titlearea-show-page {
     font-family: 'Saira Semi Condensed', sans-serif;
-    display: grid;
-    justify-content: center;
-    align-items: center;
 }
 
 .titlearea-show-page h2 {
@@ -41,9 +33,11 @@ h2 {
     font-size: 20px;
 }
 
-.titlearea-show-page img {
+.show-image {
     height: 200px;
     width: 200px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .coin-numbers {
@@ -70,4 +64,9 @@ h2 {
 .coin-numbers p {
     font-size: 16px;
     color: rgb(54, 54, 54);
+}
+@media screen and (max-width: 975px) {
+    .coin-numbers {
+        width: 90vw;
+    }
 }

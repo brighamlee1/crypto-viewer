@@ -31,14 +31,10 @@ function Coin(props) {
     return (
         <div className="coin-container">
             <div className="coin-box">
-                <div className="titlearea-box">
-                    <div className="titlearea-show-page">
-                        <div>
-                            <h2>{coin.name}</h2>
-                            <h3>({coin.symbol.toUpperCase()})</h3>
-                        </div>
-                        <img src={coin.image.large} alt={coin.symbol} />
-                    </div>
+                <div className="titlearea-show-page">
+                    <h2>{coin.name}</h2>
+                    <h3>({coin.symbol.toUpperCase()})</h3>
+                    <img className='show-image' src={coin.image.large} alt={coin.symbol} />
                 </div>
                 <div className="coin-numbers">
                     <div className="coin-boxes">

@@ -140,6 +140,8 @@ p {
 .labels-coin p {
   width: 226px;
   text-align: start;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 17px;
 }
 
 .labels-data {
@@ -147,6 +149,8 @@ p {
   justify-content: space-between;
   text-align: center;
   width: 100%;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 17px;
 }
 
 .symbol-label {
@@ -177,6 +181,28 @@ p {
 .title-box {
   display: grid;
   justify-items: center;
+  margin-top: 60px;
+}
+
+.title-box h2 {
+  width: 100%;
+  text-align: center;
+  color: #272761;
+  margin-bottom: 18px;
+  font-size: 28px;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.title-box a {
+  color: #272761;
+  transition: all .35s ease-in-out;
+  text-decoration: none;
+  border-bottom: 2px solid #272761;
+}
+
+.title-box a:hover {
+  color: red;
+  border-bottom: 2px solid red;
 }
 
 .title-image-box {
@@ -189,5 +215,97 @@ p {
   width: 200px;
   border-radius: 50%;
   image-rendering: optimizeQuality;
-  margin: 80px 0 20px 0;
+  margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 975px) {
+  .crypto-data {
+    display: flex;
+    justify-content: space-between;
+  }
+  .crypto-row {
+    width: 90vw;
+  }
+  .labels-data {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .labels-row {
+    width: 90vw;
+  }
+  .symbol {
+    display: none;
+  }
+  
+  .price {
+    width: 200px;
+    text-align: end;
+  }
+  
+  .percentage-24h {
+    width: 200px; 
+    text-align: end;
+  }
+  
+  .price-7d {
+    display: none;
+  }
+  
+  .market-cap {
+    display: none;
+  }
+  .symbol-label {
+    display: none;
+  }
+  
+  .price-label {
+    width: 200px;
+    text-align: end;
+  }
+  
+  .label-24h {
+    width: 200px;
+    text-align: end;
+  }
+  
+  .label-7d {
+    display: none;
+  }
+  
+  .market-cap-label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .crypto-data {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .labels-data {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .price {
+    width: auto;
+    text-align: end;
+  }
+  .percentage-24h {
+    display: none;
+  }
+  .price-label {
+    width: auto;
+    text-align: end;
+  }
+  .label-24h {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title-box h2 {
+    font-size: 24px;
+  }
 }

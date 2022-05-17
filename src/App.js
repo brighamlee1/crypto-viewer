@@ -17,7 +17,9 @@ function App() {
   const [crypto, setCrypto] = useState([]);
   const [search, setSearch] = useState('');
 
-  const filteredCoins = crypto.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()));
+  const filteredCoins = crypto.filter(coin =>
+    coin.name.toLowerCase().includes(search.toLowerCase()
+    ));
 
   const url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d%2C14d%2C30d%2C200d/";
 
@@ -41,7 +43,6 @@ function App() {
   useEffect(() => {
     getCrypto();
   }, [])
-  
 
   return (
     <div className="App">
@@ -72,7 +73,12 @@ function App() {
         />
         <Route
           path="/news"
-          element={<News />}
+          element={
+            <>
+              <News />
+              <Footer />
+            </>
+          }
         />
       </Routes>
     </div>

@@ -1,3 +1,5 @@
+import '../styles/CryptoList.css';
+
 function Footer() {
     return (
         <div className="footer-box">
