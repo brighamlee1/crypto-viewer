@@ -48,7 +48,7 @@ h2 {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 50px;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 80px;
     font-size: 19px;
     height: auto;
     width: 80vw;
