@@ -34,12 +34,10 @@ nav a {
 }
 
 nav a:hover {
-    transform: scale(1.2);
     color: red;
 }
 
 #dark nav a:hover {
-    transform: scale(1.2);
     color: red;
 }
 
@@ -48,7 +46,6 @@ nav a:active {
 }
 
 #dark nav a:active {
-    transform: scale(1.2);
     color: red;
 }
 
@@ -58,10 +55,11 @@ nav h1 {
 
 .news-link {
     padding-right: 20px;
+    padding-left: 10px;
 }
 
 .crypto-viewer-link {
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .footer-box {
@@ -120,11 +118,9 @@ nav h1 {
 
 @media screen and (max-width: 450px) {
     nav a:hover {
-        transform: none;
         color: #272761;
     }
     #dark nav a:hover {
-        transform: none;
         color: rgb(228, 228, 228);
     }
 }
