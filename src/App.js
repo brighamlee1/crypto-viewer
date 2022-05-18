@@ -45,7 +45,7 @@ function App() {
     console.log(e.target.value.toLowerCase())
   }
   const onClick = () => {
-    search = '';
+    setSearch('');
   }
   useEffect(() => {
     getCrypto();

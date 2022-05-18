@@ -29,7 +29,7 @@ function News() {
 
     if (!news) {
         return (
-            <h1>Loading ... </h1>
+            <h1></h1>
         )
     }
     const newsArticles = news.value;
