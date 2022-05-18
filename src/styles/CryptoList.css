@@ -18,6 +18,10 @@ p {
   background-color: rgb(228, 228, 228);
 }
 
+#dark .crypto-list {
+  background-color: rgb(25, 25, 25);
+}
+
 .crypto-list a {
   text-decoration: none;
 }
@@ -38,12 +42,25 @@ p {
   transition: all .4s ease-out;
 }
 
+#dark .crypto-row {
+  color:rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
 .crypto-row:hover {
   background-color: rgb(209, 209, 209);
 }
 
+#dark .crypto-row:hover {
+  background-color: rgb(45, 45, 45);
+}
+
 .crypto-row:active {
   background-color: rgb(209, 209, 209);
+}
+
+#dark .crypto-row:active {
+  background-color: rgb(45, 45, 45);
 }
 
 .crypto-coin {
@@ -126,6 +143,12 @@ p {
   transition: .4s;
 }
 
+#dark .labels-row {
+  color: rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(228, 228, 228);
+  border-top: 1px solid rgb(228, 228, 228);
+}
+
 .labels-coin {
   display: flex;
   align-items: center;
@@ -181,7 +204,6 @@ p {
 .title-box {
   display: grid;
   justify-items: center;
-  margin-top: px;
 }
 
 .title-box h2 {
@@ -193,6 +215,10 @@ p {
   font-family: 'Saira Semi Condensed', sans-serif;
 }
 
+#dark .title-box h2 {
+  color:rgb(228, 228, 228);
+}
+
 .title-box a {
   color: #272761;
   transition: .35s;
@@ -200,7 +226,19 @@ p {
   border-bottom: 2px solid #272761;
 }
 
+#dark .title-box a {
+  color: rgb(228, 228, 228);
+  transition: .35s;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(228, 228, 228);
+}
+
 .title-box a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+#dark .title-box a:hover {
   color: red;
   border-bottom: 2px solid red;
 }
@@ -221,20 +259,6 @@ p {
 .placeholder {
   height: 80px;
 }
-
-/* .rotate:hover {
-  animation: rotation 5s infinite;
-  animation-delay: 5s;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-} */
 
 @media screen and (max-width: 975px) {
   .crypto-data {

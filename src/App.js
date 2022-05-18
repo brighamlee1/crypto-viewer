@@ -3,8 +3,10 @@ import './styles/HeaderFooter.css';
 import './styles/Search.css';
 import './styles/Coin.css';
 import './styles/News.css';
-import { useEffect, useState } from 'react';
+import './styles/Theme.css';
+import { useEffect, useState, createContext } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import useLocalStorage from 'use-local-storage';
 import Coin from './pages/Coin';
 import CryptoList from './pages/CryptoList';
 import Header from './components/Header';
@@ -13,9 +15,16 @@ import Search from './components/Search';
 import Footer from './components/Footer';
 import News from './pages/News';
 
+export const ThemeContext = createContext(null);
+
 function App() {
   const [crypto, setCrypto] = useState([]);
   const [search, setSearch] = useState('');
+  const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : '')
+
+  const toggleTheme = () => {
+    setTheme((curr) => curr === "" ? "dark" : "")
+  }
 
   const filteredCoins = crypto.filter(coin =>
     coin.name.toLowerCase().includes(search.toLowerCase()
@@ -30,10 +39,6 @@ function App() {
     setCrypto(data);
   };
 
-  // const clearState = () => {
-  //   setSearch({ ...search });
-  // };
-
   const handleChange = async (e) => {
     await e.preventDefault();
     setSearch(e.target.value.toLowerCase());
@@ -47,45 +52,50 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Title />
-            <Search
-              type="text"
-              placeholder="Search by coin name"
-              onChange={handleChange}
-            />
-            <CryptoList
-              crypto={filteredCoins}
-              onClick={onClick}
-            />
-            <Footer />
-          </>
-        }
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div className="App" id={theme}>
+        <Header
+          theme={theme}
+          toggleTheme={toggleTheme}
         />
-        <Route
-          path="/:id"
-          element={
+        <Routes>
+          <Route path="/" element={
             <>
-              <Coin />
+              <Title />
+              <Search
+                type="text"
+                placeholder="Search by coin name"
+                onChange={handleChange}
+              />
+              <CryptoList
+                crypto={filteredCoins}
+                onClick={onClick}
+              />
               <Footer />
             </>
           }
-        />
-        <Route
-          path="/news"
-          element={
-            <>
-              <News />
-              <Footer />
-            </>
-          }
-        />
-      </Routes>
-    </div>
+          />
+          <Route
+            path="/:id"
+            element={
+              <>
+                <Coin />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/news"
+            element={
+              <>
+                <News />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 

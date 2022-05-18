@@ -13,10 +13,14 @@ function News() {
     const url = 'https://bing-news-search1.p.rapidapi.com/news/search?q=crypto&count=25&freshness=Day&textFormat=Raw&safeSearch=Off';
 
     const getNews = async () => {
-        const response = await fetch(url, options);
-        const data = await response.json();
-        console.log(data);
-        setNews(data);
+        try {
+            const response = await fetch(url, options);
+            const data = await response.json();
+            console.log(data);
+            setNews(data);
+        } catch(err) {
+            console.log(err)
+        }
     }
 
     useEffect(() => {
@@ -41,7 +45,7 @@ function News() {
                             <a className="article-link" href={news.url} key={idx} target="_blank">
                                 <div className="news-articles">
                                     <div className="article">
-                                        {!news.image.thumbnail.contentUrl ? <p></p> : <img src={news.image.thumbnail.contentUrl} />}
+                                        {(!news.image) ? <p></p> : <img src={news.image.thumbnail.contentUrl} alt={news.category} />}
                                         <h2>{news.name}</h2>
                                     </div>
                                 </div>

@@ -7,10 +7,13 @@ h2 {
 }
 
 .coin-container {
-    margin-top: px;
     background-color: rgb(228, 228, 228);
     display: flex;
     justify-content: center;
+}
+
+#dark .coin-container {
+    background-color: rgb(25, 25, 25);
 }
 
 .coin-box {
@@ -56,15 +59,28 @@ h2 {
     padding-bottom: 50px;
 }
 
+#dark .coin-numbers {
+    box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.3);
+    background-color: rgb(19, 19, 19);
+}
+
 .coin-numbers h3 {
     font-family: 'Saira Semi Condensed', sans-serif;
     font-weight: 500;
     color: #272761;
 }
 
+#dark .coin-numbers h3 {
+    color:rgb(228, 228, 228);
+}
+
 .coin-numbers p {
     font-size: 16px;
     color: rgb(54, 54, 54);
+}
+
+#dark .coin-numbers p {
+    color:rgb(180, 180, 180);
 }
 
 @media screen and (max-width: 975px) {

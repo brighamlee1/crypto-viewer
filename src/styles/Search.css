@@ -19,11 +19,28 @@
     transition: .3s;
 }
 
+#dark .search {
+    background-color: rgb(25, 25, 25);
+    border-bottom: 2px solid rgb(228, 228, 228);
+    caret-color: rgb(228, 228, 228);
+    color: rgb(228, 228, 228);
+}
+
 .search::placeholder {
     color: #272761;
 }
 
+#dark .search::placeholder {
+    color: rgb(228, 228, 228);
+}
+
 .search:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+#dark .search:focus {
     outline: none;
     border: none;
     border-bottom: 2px solid red;

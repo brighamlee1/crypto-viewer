@@ -5,13 +5,18 @@
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     border-bottom: 3px solid #272761;
     height: 55px;
     width: 100vw;
     align-items: center;
     position: fixed;
     background-color: rgba(228, 228, 228, 0.897);
+}
+
+#dark nav {
+    background-color: rgba(25, 25, 25, 0.897);
+    border-bottom: 3px solid rgb(228, 228, 228);
 }
 
 nav a {
@@ -24,7 +29,16 @@ nav a {
     transition: all .25s ease-in-out;
 }
 
+#dark nav a {
+    color: rgb(228, 228, 228);
+}
+
 nav a:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+#dark nav a:hover {
     transform: scale(1.2);
     color: red;
 }
@@ -33,14 +47,31 @@ nav a:active {
     color: red;
 }
 
+#dark nav a:active {
+    transform: scale(1.2);
+    color: red;
+}
+
 nav h1 {
     font-weight: 700;
+}
+
+.news-link {
+    padding-right: 20px;
+}
+
+.crypto-viewer-link {
+    padding-right: 20px;
 }
 
 .footer-box {
     display: flex;
     justify-content: center;
     background-color: rgb(228, 228, 228);
+}
+
+#dark .footer-box {
+    background-color: rgb(25, 25, 25);
 }
 
 .footer-container {
@@ -52,12 +83,21 @@ nav h1 {
     width: 80vw;
 }
 
+#dark .footer-container {
+    background-color: rgb(25, 25, 25);
+}
+
 .footer-container h4 {
     color: #272761;
     border-bottom: 2px solid #272761;
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
     padding-bottom: 4px;
+}
+
+#dark .footer-container h4 {
+    border-bottom: 2px solid rgb(228, 228, 228);
+    color: rgb(228, 228, 228);
 }
 
 .footer-logo {
