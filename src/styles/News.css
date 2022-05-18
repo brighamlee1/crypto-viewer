@@ -36,14 +36,15 @@ section {
 }
 
 .article img {
-    /* border: 2px solid rgb(235, 235, 235); */
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     height: 210px; 
     width: 210px;
     min-width: 210px;
-    overflow: hidden;
+
 }
 
 .article-link {
@@ -52,7 +53,7 @@ section {
 }
 
 .article h2 {
-    font-size: 18px;
+    font-size: 17px;
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 20px;
