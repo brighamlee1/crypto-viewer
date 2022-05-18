@@ -85,11 +85,23 @@ section {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 450px){
     .articles-container {
         display: grid;
         grid-gap: 30px;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         padding: 20px 20px 40px 20px;
+    }
+    .article:hover {
+        transform: none;
+        z-index: auto;
+        background-color: transparent;
+        overflow: hidden;
+    }
+    #dark .article:hover {
+        transform: none;
+        z-index: auto;
+        background-color: transparent;
+        overflow: hidden;
     }
 }

@@ -345,6 +345,24 @@ p {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .crypto-row:hover {
+    background-color: rgb(228, 228, 228);
+  }
+  #dark .crypto-row:hover {
+    background-color: rgb(25, 25, 25);
+  }
+  .title-box a:hover {
+    color: #272761;
+    border-bottom: 2px solid #272761;
+  }
+  
+  #dark .title-box a:hover {
+    color: #272761;
+    border-bottom: 2px solid #272761;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .title-box h2 {
     font-size: 24px;
