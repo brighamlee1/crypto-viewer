@@ -8,9 +8,5 @@
     align-items: center;
     float: left;
     margin-right: auto;
-    margin-left: 10px;
-}
-
-.react-switch-bg {
-    position: relative;
+    margin-left: 20px;
 }

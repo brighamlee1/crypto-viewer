@@ -125,6 +125,6 @@ nav h1 {
     }
     #dark nav a:hover {
         transform: none;
-        color: #272761;
+        color: rgb(228, 228, 228);
     }
 }
