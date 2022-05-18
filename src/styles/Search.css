@@ -8,7 +8,7 @@
 .search {
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
-    background-color: rgb(228, 228, 228);
+    background-color: transparent;
     border: none;
     outline: none;
     border-bottom: 2px solid #272761;
@@ -20,7 +20,7 @@
 }
 
 #dark .search {
-    background-color: rgb(25, 25, 25);
+    background-color: transparent;
     border-bottom: 2px solid rgb(228, 228, 228);
     caret-color: rgb(228, 228, 228);
     color: rgb(228, 228, 228);
