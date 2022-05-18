@@ -25,7 +25,6 @@ function News() {
   useEffect(() => {
     getNews()
   }, [])
-
   if (!news) {
     return (
       <h1></h1>
