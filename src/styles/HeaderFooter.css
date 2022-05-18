@@ -117,3 +117,14 @@ nav h1 {
         margin-top: 10px;
     }
 } 
+
+@media screen and (max-width: 450px) {
+    nav a:hover {
+        transform: none;
+        color: #272761;
+    }
+    #dark nav a:hover {
+        transform: none;
+        color: #272761;
+    }
+}
