@@ -186,7 +186,7 @@ p {
 .title-box {
   display: grid;
   justify-items: center;
-  margin-top: 60px;
+  margin-top: px;
 }
 
 .title-box h2 {
@@ -221,6 +221,10 @@ p {
   border-radius: 50%;
   image-rendering: optimizeQuality;
   margin: 0 0 20px 0;
+}
+
+.placeholder {
+  height: 80px;
 }
 
 .rotate:hover {

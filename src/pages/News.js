@@ -31,6 +31,8 @@ function News() {
     const newsArticles = news.value;
     return (
         <section>
+            <div className="placeholder">
+            </div>
             <h1 className="news-title">Latest Crypto Currency News</h1>
             <div className="articles-container">
                 {

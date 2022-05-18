@@ -31,6 +31,8 @@ function Coin(props) {
     return (
         <div className="coin-container">
             <div className="coin-box">
+                <div className="placeholder">
+                </div>
                 <div className="titlearea-show-page">
                     <h2>{coin.name}</h2>
                     <h3>({coin.symbol.toUpperCase()})</h3>
