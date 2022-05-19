@@ -1,17 +1,17 @@
 # Crypto Viewer
 
 ### Description
-- My app is called Crypto Viewer and I wanted to create this because I am very interested in crypto and want to make it easier to view the key details.
-- My application will display the top 100 cryptocurrencies in real time and will update as the info updates.
+- My app is called Crypto Viewer and with this app you can get all the key information you need to know about a certain crypto coin.
+- My application will display the top 250 cryptocurrencies in real time and will update as the info updates.
 - You will be able to click on a crypto coin and view more thorough information about it.
 - You will be able to view stats that can help you learn more about crypto itself or a specific coin you would like to learn about.
+- You will also be able to view the latest news topics related to crypto.
+- You can click on a news article and it will take you to the source's website and you can read further into that topic.
 
-### MVP User Stories
-- As a user, I want to see all of the top 100 cryptocurrencies in real time and see real stats.
+### User Stories
+- As a user, I want to see all of the top 250 cryptocurrencies in real time and see real stats.
 - As a user, I want to click on a crypto coin and view more information about it.
 - As a user, I want to be able to view this application on my phone as well as my laptop.
-
-### Post MVP User Stories
 - As a user, I would like to be able to search for a crypto currency on the home page.
 - As a user, I want to be able to see the latest news on crypto currency.
 
@@ -66,4 +66,4 @@
 ![Screen Shot 2022-05-13 at 2 40 29 PM](https://user-images.githubusercontent.com/91819733/168378500-c56b33c7-1a77-4fd1-9e2b-ebfc4aa3edbe.png)
 
 ### Component Hierarchy
-![Screen Shot 2022-05-13 at 2 57 33 PM](https://user-images.githubusercontent.com/91819733/168380883-340a6636-df62-4bd1-980d-4ba3d7352aaf.png)
+![Screen Shot 2022-05-19 at 9 56 24 AM](https://user-images.githubusercontent.com/91819733/169327315-b270ec4b-c2dc-4eed-aaf1-73886f2cc857.png)
