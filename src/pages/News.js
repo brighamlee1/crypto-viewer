@@ -23,11 +23,11 @@ function News() {
     }
   }
   useEffect(() => {
-    getNews()
+    getNews();
   }, [])
   if (!news) {
     return (
-      <h1></h1>
+      <h1> </h1>
     )
   }
   const newsArticles = news.value;
@@ -40,7 +40,8 @@ function News() {
         {
           newsArticles.map((news, idx) => {
             return (
-              <a className="article-link" href={news.url} key={idx} target="_blank">
+              <a className="article-link" href={news.url} key={idx} target="_blank" rel="noreferrer">
+              
                 <div className="news-articles">
                   <div className="article">
                     {(!news.image) ? <p></p> : <img src={news.image.thumbnail.contentUrl} alt={news.category} />}
