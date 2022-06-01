@@ -31,19 +31,24 @@ function CryptoList(props) {
                 <div className="crypto-data">
                   <p className="symbol">{coin.symbol.toUpperCase()}</p>
                   <p className="price">${coin.current_price.toLocaleString()}</p>
-                  {coin.price_change_percentage_24h_in_currency < 0 ? (
-                    <p className="percentage-24h
+                  {coin.price_change_percentage_24h_in_currency ? (
+                    coin.price_change_percentage_24h_in_currency < 0 ? (
+                      <p className="percentage-24h
                                     red">
-                      {coin.price_change_percentage_24h_in_currency.toFixed(2)}%</p>
-                  ) : (
-                    <p className="percentage-24h
+                        {coin.price_change_percentage_24h_in_currency.toFixed(2)}%</p>
+                    ) : (
+                      <p className="percentage-24h
                                     green">{coin.price_change_percentage_24h_in_currency.toFixed(2)}%</p>
-                  )}
-                  {coin.price_change_percentage_7d_in_currency < 0 ? (
-                    <p className="price-7d red">{coin.price_change_percentage_7d_in_currency.toFixed(2)}%</p>
-                  ) : (
-                    <p className="price-7d green">{coin.price_change_percentage_7d_in_currency.toFixed(2)}%</p>
-                  )
+                    )
+                  ) : <p className="price-7d green">0.00%</p>
+                  }
+                  {coin.price_change_percentage_7d_in_currency ? (
+                    coin.price_change_percentage_7d_in_currency < 0 ? (
+                      <p className="price-7d red">{coin.price_change_percentage_7d_in_currency.toFixed(2)}%</p>
+                    ) : (
+                      <p className="price-7d green">{coin.price_change_percentage_7d_in_currency.toFixed(2)}%</p>
+                    )
+                  ) : <p className="price-7d green">0.00%</p>
                   }
                   <p className="market-cap">${coin.market_cap.toLocaleString()}</p>
                 </div>

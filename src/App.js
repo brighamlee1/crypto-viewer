@@ -15,7 +15,7 @@ import Search from './components/Search';
 import Footer from './components/Footer';
 import News from './pages/News';
 
-export const ThemeContext = createContext(null);
+export const ThemeContext = createContext('');
 
 function App() {
   const [crypto, setCrypto] = useState([]);
