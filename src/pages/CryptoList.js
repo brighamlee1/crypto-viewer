@@ -30,7 +30,7 @@ function CryptoList(props) {
                 </div>
                 <div className="crypto-data">
                   <p className="symbol">{coin.symbol.toUpperCase()}</p>
-                  <p className="price">${coin.current_price.toLocaleString()}</p>
+                  <p className="price">${coin.current_price}</p>
                   {coin.price_change_percentage_24h_in_currency ? (
                     coin.price_change_percentage_24h_in_currency < 0 ? (
                       <p className="percentage-24h
